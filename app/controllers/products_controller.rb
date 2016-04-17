@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
 	def index
-		@products = ["kudoz", "uSlide", "Hubum" , "Roadstr"]
+		@products = Product.all
+	end
+
+	def show
+		@product = Product.find(params[:id])
 	end
 end

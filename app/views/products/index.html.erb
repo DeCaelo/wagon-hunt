@@ -2,6 +2,8 @@
 
 <ul>
 	<% @products.each do |product| %>
-	<li><%= product %></li>
+	<li>
+		<%= product.name %> (<%= product.url %>)
+	</li>
 <% end %>
 </ul>
